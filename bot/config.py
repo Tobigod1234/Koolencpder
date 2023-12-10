@@ -43,7 +43,7 @@ try:
     FCODEC = config("FCODEC", default=None)
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
+        default='ffmpeg -i """{}""" -metadata:s:v:0 title="[Anime zenith] : (This Episode)" -metadata:s:a:0 title="[Telegram: @AnimeZenith_ongoing]" -metadata:s:a:1 title="[Telegram: @AnimeZenith_ongoing]" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title="Fileinfo | Zenith " -c:v libx265 -pix_fmt yuv420p10le -preset slow -s 852x480 -crf 28 -c:a libopus -ac 2 -vbr 2  -ab 45k -c:s copy -movflags +faststart """{}""" -y'
     )
     FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
     FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
