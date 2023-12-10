@@ -15,8 +15,6 @@
 
 
 from pyrogram import filters
-
-from . import *
 from .startup.after import on_startup
 from .utils.msg_utils import event_handler
 from .workers.handlers.dev import bash
