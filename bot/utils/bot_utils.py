@@ -52,8 +52,8 @@ class Var_list:
     QUEUE = {}
     OK = {}
 
-    FINISHED_PROGRESS_STR = "🧡"
-    UN_FINISHED_PROGRESS_STR = "🤍"
+    FINISHED_PROGRESS_STR = "▰"
+    UN_FINISHED_PROGRESS_STR = "▱"
     MAX_MESSAGE_LENGTH = 4096
 
 
@@ -202,8 +202,8 @@ sdict.update(
     {
         3: "Not a video.",
         2: "DONE!",
-        1: "✅",
-        0: "❌",
+        1: "🌟",
+        0: "🛑",
         None: "NOT SET!",
     }
 )
