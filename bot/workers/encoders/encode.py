@@ -43,10 +43,10 @@ class Encoder:
                 buttons=[
                     [Button.inline("ℹ️", data=f"pres{wah}")],
                     [
-                        Button.inline("Progress", data=f"stats0"),
-                        Button.inline("Server-info", data=f"stats1"),
+                        Button.inline("💥 Progress", data=f"stats0"),
+                        Button.inline("🌐 Server-info", data=f"stats1"),
                     ],
-                    [Button.inline("Cancel", data=f"skip{wah}")],
+                    [Button.inline("❌ Cancel", data=f"skip{wah}")],
                 ],
             )
             if self.log_msg and self.sender:
@@ -56,8 +56,8 @@ class Encoder:
                     f"**User:**\n└[{self.sender.first_name}](tg://user?id={user})\n\n**Currently Encoding:**\n└`{out}`\n\n**Source File:**\n└`{sau}`",
                     buttons=[
                         [Button.inline("ℹ️", data=f"pres{wah}")],
-                        [Button.inline("CHECK PROGRESS", data=f"stats2")],
-                        [Button.inline("CANCEL PROCESS", data=f"skip{wah}")],
+                        [Button.inline("💥 CHECK PROGRESS", data=f"stats2")],
+                        [Button.inline("❌ CANCEL PROCESS", data=f"skip{wah}")],
                     ],
                 )
 
