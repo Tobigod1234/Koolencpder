@@ -38,7 +38,7 @@ try:
     EXT_CAP = config("EXTENDED_CAPTIONS", default=True, cast=bool)
     WORKERS = config("WORKERS", default=2, cast=int)
     FBANNER = config("FBANNER", default=True, cast=bool)
-    FCHANNEL = config("FCHANNEL", default=-1001956463589, cast=int)
+    FCHANNEL = config("FCHANNEL", default=-1002108819224, cast=int)
     FCHANNEL_STAT = config("FCHANNEL_STAT", default=2, cast=int)
     FCODEC = config("FCODEC", default=None)
     FFMPEG = config(
