@@ -61,15 +61,8 @@ def enmoji2():
 
 def enhearts():
     emoji = (
-        "💖",
-        "💗",
-        "💘",
-        "💝",
-        "💞",
-        "💟",
-        "💌",
-        "🩵",
-        "🩶",
+        "■",
+        "▫️",
     )
     y = random.choice(emoji)
     return y
