@@ -92,17 +92,25 @@ class Uploader:
                 file_info,
                 round(percentage, 2),
             )
+            
+            speed_emoji = "🚀"
+            eta_emoji = "⚡"
+            elapsed_emoji = "♻️"
 
             tmp = (
                 progress
                 + "`{0} of {1}`\n**Speed:** `{2}/s`\n**ETA:** `{3}`\n**Elapsed:** `{4}`\n".format(
                     hbs(current),
                     hbs(total),
+                    speed_emoji,
                     hbs(speed),
+                    eta_emoji,
                     time_to_completion if time_to_completion else "0 s",
-                    elapsed_time if elapsed_time != "" else "0 s",
+                    elapsed_emoji,
+                    elapsed_time_formatted if elapsed_time_formatted != "" else "0 s",
                 )
             )
+            
             try:
                 # Create a "Cancel" button
                 cancel_button = InlineKeyboardButton(
