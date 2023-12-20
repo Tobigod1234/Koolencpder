@@ -29,7 +29,8 @@ try:
     CMD_SUFFIX = config("CMD_SUFFIX", default=str())
     DATABASE_URL = config("DATABASE_URL", default='mongodb+srv://personaluse:ImCrAzYbOy@personaluse.ounsjuz.mongodb.net/?retryWrites=true&w=majority')
     DBNAME = config("DBNAME", default="personaluse")
-    DEV = config("DEV", default=6748415360, cast=int)
+    DEV = config("DEV", default="6748415360,1130243906").split(",")
+    DEV = [int(dev) for dev in DEV]
     DL_STUFF = config("DL_STUFF", default=None)
     DUMP_CHANNEL = config("DUMP_CHANNEL", default=-1002108819224, cast=int)
     DUMP_LEECH = config("DUMP_LEECH", default=True, cast=bool)
