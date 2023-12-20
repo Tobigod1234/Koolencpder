@@ -19,14 +19,17 @@
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @apiScrapperRoBot.",
             "value": ""
+            "required": false
         },
         "BOT_TOKEN": {
             "description": "Make a bot from @BotFather, and enter it's api token here.",
             "value": ""
+            "required": false
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
             "value": ""
+            "required": false
         },
         "LOG_CHANNEL": {
             "description": "Input Log Channel Id",
@@ -76,6 +79,7 @@
         "DATABASE_URL": {
             "description": "Mongodb Database Url",
             "value": ""
+            "required": false
         },
         "FFMPEG": {
             "description": "Put your FFMPEG code.",
