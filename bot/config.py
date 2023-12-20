@@ -22,9 +22,9 @@ try:
     APP_ID = config("APP_ID", default=3847632, cast=int)
     API_HASH = config("API_HASH", default="1a9708f807ddd06b10337f2091c67657")
     ARIA2_PORT = config("ARIA2_PORT", default=6800, cast=int)
-    BOT_TOKEN = config("BOT_TOKEN", default="6312969509:AAG4xWsi1tNaEZqha9lvWB9FryDPgAMjnNQ")
+    BOT_TOKEN = config("BOT_TOKEN", default="6312969509:AAE4CYabaJQceMV1fB3fRFRnbDRljk_je_c")
     CACHE_DL = config("CACHE_DL", default=False, cast=bool)
-    CAP_DECO = config("CAP_DECO", default="◉")
+    CAP_DECO = config("CAP_DECO", default="🌚")
     C_LINK = config("C_LINK", default="@AnimeZenith_ongoing")
     CMD_SUFFIX = config("CMD_SUFFIX", default=str())
     DATABASE_URL = config("DATABASE_URL", default='mongodb+srv://personaluse:ImCrAzYbOy@personaluse.ounsjuz.mongodb.net/?retryWrites=true&w=majority')
@@ -43,7 +43,7 @@ try:
     FCODEC = config("FCODEC", default=None)
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i """{}""" -metadata:s:v:0 title="[Anime zenith] : (This Episode)" -metadata:s:a:0 title="[Telegram: @AnimeZenith_ongoing]" -metadata:s:a:1 title="[Telegram: @AnimeZenith_ongoing]" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title="Fileinfo | Zenith " -c:v libx265 -pix_fmt yuv420p10le -preset slow -s 852x480 -crf 28 -c:a libopus -ac 2 -vbr 2  -ab 45k -c:s copy -movflags +faststart """{}""" -y'
+        default='ffmpeg -i """{}""" -metadata:s:v:0 title="[Anime zenith] : (This Episode)" -metadata:s:a:0 title="[Telegram: @AnimeZenith_ongoing]" -metadata:s:a:1 title="[Telegram: @AnimeZenith_ongoing]" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title="Fileinfo | Zenith " -c:v libx264 -pix_fmt yuv420p10le -preset veryfast -s 852x480 -crf 30 -c:a libopus -ac 2 -vbr 2  -ab 32k -c:s copy -movflags +faststart """{}""" -y'
     )
     FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
     FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
