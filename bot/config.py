@@ -27,7 +27,7 @@ try:
     CAP_DECO = config("CAP_DECO", default="🌚")
     C_LINK = config("C_LINK", default="@AnimeZenith_ongoing")
     CMD_SUFFIX = config("CMD_SUFFIX", default=str())
-    DATABASE_URL = config("DATABASE_URL", default='mongodb+srv://sai:sai@cluster0.ayo8gc4.mongodb.net/?retryWrites=true&w=majority')
+    DATABASE_URL = config("DATABASE_URL", default='mongodb+srv://personaluse:ImCrAzYbOy@personaluse.ounsjuz.mongodb.net/?retryWrites=true&w=majority')
     DBNAME = config("DBNAME", default="personaluse")
     DEV = config("DEV", default="6748415360,1130243906").split(",")
     DEV = [int(dev) for dev in DEV]
