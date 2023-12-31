@@ -22,7 +22,7 @@ try:
     APP_ID = config("APP_ID", default=3847632, cast=int)
     API_HASH = config("API_HASH", default="1a9708f807ddd06b10337f2091c67657")
     ARIA2_PORT = config("ARIA2_PORT", default=6800, cast=int)
-    BOT_TOKEN = config("BOT_TOKEN", default="6987862249:AAEktT03TEz3n2gtu7Pd5b8_3Z8bL0DK4Q4")
+    BOT_TOKEN = config("BOT_TOKEN", default="6312969509:AAE4CYabaJQceMV1fB3fRFRnbDRljk_je_c")
     CACHE_DL = config("CACHE_DL", default=False, cast=bool)
     CAP_DECO = config("CAP_DECO", default="🌚")
     C_LINK = config("C_LINK", default="@AnimeZenith_ongoing")
